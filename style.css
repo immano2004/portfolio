@@ -1,22 +1,30 @@
+/* PAGE */
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(135deg, #eef2f7, #dbeafe);
-  margin: 0;
-  padding: 40px;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  background: #f6f8fb;
   max-width: 1000px;
   margin: auto;
+  padding: 40px 20px;
+  line-height: 1.6;
+  color: #222;
 }
+
+
+/* CARD DESIGN */
+.card {
+  background: white;
+  padding: 30px;
+  margin-bottom: 25px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+}
+
 
 /* HERO */
 .hero {
   display: flex;
   gap: 30px;
   align-items: center;
-  background: white;
-  padding: 30px;
-  border-radius: 16px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-  margin-bottom: 30px;
 }
 
 .profile {
@@ -24,18 +32,10 @@ body {
   height: 160px;
   border-radius: 50%;
   object-fit: cover;
-  border: 4px solid #2563eb;
 }
 
-/* CARDS */
-.card {
-  background: white;
-  padding: 25px;
-  margin-bottom: 25px;
-  border-radius: 14px;
-  box-shadow: 0 8px 18px rgba(0,0,0,0.07);
-}
 
+/* HEADINGS */
 h1 {
   margin: 0;
   font-size: 36px;
@@ -46,34 +46,47 @@ h2 {
   color: #2563eb;
 }
 
-/* SKILLS */
-.grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
+.summary {
+  color: #555;
+  max-width: 600px;
 }
 
-.grid span {
-  background: #2563eb;
-  color: white;
+
+/* SKILL CHIPS */
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.chips span {
+  background: #e9eefc;
   padding: 8px 14px;
   border-radius: 20px;
   font-size: 14px;
 }
+
 
 /* PROJECTS */
 .project {
   margin-bottom: 18px;
 }
 
+
 /* BUTTON */
 .btn {
   display: inline-block;
+  margin-top: 10px;
+  padding: 10px 18px;
   background: #2563eb;
   color: white;
-  padding: 10px 16px;
-  border-radius: 8px;
   text-decoration: none;
-  margin-top: 10px;
+  border-radius: 8px;
   font-weight: 600;
+}
+
+
+/* FOOTER */
+.footer {
+  text-align: center;
 }
