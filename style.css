@@ -1,92 +1,150 @@
-/* PAGE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
 body {
-  font-family: 'Segoe UI', system-ui, sans-serif;
-  background: #f6f8fb;
-  max-width: 1000px;
-  margin: auto;
-  padding: 40px 20px;
+  background: #ffffff;
+  color: #111;
   line-height: 1.6;
-  color: #222;
 }
 
 
-/* CARD DESIGN */
-.card {
-  background: white;
-  padding: 30px;
-  margin-bottom: 25px;
-  border-radius: 14px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
-}
+/* ================= NAV ================= */
 
-
-/* HERO */
-.hero {
+.nav {
   display: flex;
-  gap: 30px;
+  justify-content: space-between;
   align-items: center;
+  padding: 25px 10%;
 }
 
-.profile {
-  width: 160px;
-  height: 160px;
+.logo {
+  font-weight: 800;
+  font-size: 24px;
+}
+
+.links a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: #111;
+  font-weight: 500;
+}
+
+.btn {
+  background: #111;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.photo-wrap {
+  width: 220px;
+  height: 220px;
+  margin: auto;
   border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid #eee;
+  margin-bottom: 30px;
+}
+
+.photo-wrap img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
-
-/* HEADINGS */
-h1 {
-  margin: 0;
-  font-size: 36px;
+.name {
+  font-size: 56px;
+  font-weight: 800;
 }
 
-h2 {
-  margin-bottom: 15px;
-  color: #2563eb;
+.role {
+  color: #555;
+  margin: 12px 0;
 }
 
 .summary {
-  color: #555;
   max-width: 600px;
+  margin: 20px auto;
+  color: #444;
 }
 
-
-/* SKILL CHIPS */
-.chips {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.chips span {
-  background: #e9eefc;
-  padding: 8px 14px;
-  border-radius: 20px;
-  font-size: 14px;
-}
-
-
-/* PROJECTS */
-.project {
-  margin-bottom: 18px;
-}
-
-
-/* BUTTON */
-.btn {
+.cta {
   display: inline-block;
-  margin-top: 10px;
-  padding: 10px 18px;
-  background: #2563eb;
+  margin-top: 15px;
+  padding: 12px 22px;
+  background: #111;
   color: white;
   text-decoration: none;
   border-radius: 8px;
-  font-weight: 600;
 }
 
 
-/* FOOTER */
-.footer {
+/* ================= SECTIONS ================= */
+
+.section {
+  padding: 70px 10%;
   text-align: center;
+}
+
+.section h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.gray {
+  background: #f7f7f7;
+}
+
+
+/* ================= SKILLS ================= */
+
+.skill-list span {
+  display: inline-block;
+  margin: 8px;
+  padding: 10px 16px;
+  background: #eee;
+  border-radius: 20px;
+}
+
+
+/* ================= PROJECT CARDS ================= */
+
+.cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  width: 280px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.card h3 {
+  margin-bottom: 10px;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+  text-align: center;
+  padding: 30px;
+  color: #888;
 }
